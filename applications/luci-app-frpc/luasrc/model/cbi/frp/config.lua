@@ -113,7 +113,7 @@ e = t:taboption("other", Flag, "enable_locations", translate("Enable URL routing
 e.description = translate("Frp support forward http requests to different backward web services by url routing.")
 e:depends("type", "http")
 
-e = t:taboption("other", Value, "locations ", translate("URL routing"))
+e = t:taboption("other", Value, "locations", translate("URL routing"))
 e.description = translate("Http requests with url prefix /news will be forwarded to this service.")
 e.default = "locations=/"
 e:depends("enable_locations", 1)
@@ -206,7 +206,7 @@ e:depends("type", "http")
 e:depends("type", "https")
 
 e = t:taboption("base", Flag, "use_encryption", translate("Use Encryption"))
-e.description = translate("Encrypted the communication between frpc and frps, will effectively prevent the traffic intercepted.")
+e.description = translate("Encrypted the communication between frpc and frps, will effectively prevent the traffic intercepted (If Custom TLS Protocol Encryption is enabled, except that the protocol of xtcp is configured as kcp, you can no longer set Use Encryption to repeat encryption).")
 e.default = "1"
 e.rmempty = false
 
