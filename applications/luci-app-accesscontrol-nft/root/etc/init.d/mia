@@ -1,0 +1,94 @@
+#!/bin/sh /etc/rc.common
+#
+# Copyright (C) 2015 OpenWrt-dist
+#
+# This is free software, licensed under the GNU General Public License v3.
+# See /LICENSE for more information.
+#
+
+START=30
+
+CONFIG=mia
+
+uci_get_by_type() {
+	local index=0
+	if [ -n $4 ]; then
+		index=$4
+	fi
+	local ret=$(uci get $CONFIG.@$1[$index].$2 2>/dev/null)
+	echo ${ret:=$3}
+}
+
+add_rule(){
+for i in $(seq 0 100)
+do
+	local enable=$(uci_get_by_type macbind enable '' $i)
+	local macaddr=$(uci_get_by_type macbind macaddr '' $i)
+	local timeon=$(uci_get_by_type macbind timeon '' $i)
+	local timeoff=$(uci_get_by_type macbind timeoff '' $i)
+	local z1=$(uci_get_by_type macbind z1 '' $i)
+	local z2=$(uci_get_by_type macbind z2 '' $i)
+	local z3=$(uci_get_by_type macbind z3 '' $i)
+	local z4=$(uci_get_by_type macbind z4 '' $i)
+	local z5=$(uci_get_by_type macbind z5 '' $i)
+	local z6=$(uci_get_by_type macbind z6 '' $i)
+	local z7=$(uci_get_by_type macbind z7 '' $i)
+	[ "$z1" == "1" ] && Z1="Monday,"
+	[ "$z2" == "1" ] && Z2="Tuesday,"
+	[ "$z3" == "1" ] && Z3="Wednesday,"
+	[ "$z4" == "1" ] && Z4="Thursday,"
+	[ "$z5" == "1" ] && Z5="Friday,"
+	[ "$z6" == "1" ] && Z6="Saturday,"
+	[ "$z7" == "1" ] && Z7="Sunday"
+	if [ -z $enable ] || [ -z $macaddr ] || [ -z $timeoff ] || [ -z $timeon ]; then
+		break
+	fi
+	if [ "$enable" == "1" ]; then
+		nft insert rule inet filter MIA ether saddr $macaddr meta hour "$timeon"-"$timeoff" meta day { $Z1, $Z2, $Z3, $Z4, $Z5, $Z6, $Z7 } drop
+	fi
+	for n in $(seq 1 7)
+	do
+		unset "Z$n"
+	done
+done
+}
+
+start(){
+  stop
+	enable=$(uci get mia.@basic[0].enable)
+	[ $enable -eq 0 ] && exit 0
+  nft add table inet filter
+  nft add chain inet filter MIA
+  nft add chain inet filter input { type filter hook input priority 0 \; }
+  nft add chain inet filter forward { type filter hook forward priority 0 \; }
+  nft add chain inet filter prerouting { type nat hook prerouting priority dstnat \; }
+
+  nft insert rule inet filter input udp dport 53 jump MIA comment "InputRuleUdp53"
+  nft insert rule inet filter input tcp dport 53 jump MIA comment "InputRuleTcp53"
+
+  nft add rule inet filter prerouting udp dport 53 redirect to :53 comment "RedirRuleUdp53"
+  nft add rule inet filter prerouting tcp dport 53 redirect to :53 comment "RedirRuleTcp53"
+
+  strict=$(uci get mia.@basic[0].strict)
+  [ $strict -eq 1 ] && nft insert rule inet filter forward jump MIA comment "FwdRule" 
+  add_rule 
+}
+stop(){
+  HANDLE=$(nft -a list chain inet filter forward | grep "FwdRule" | awk '{print $NF}')
+  nft delete rule inet filter forward handle $HANDLE
+
+  HANDLE=$(nft -a list chain inet filter input | grep "InputRuleUdp53" | awk '{print $NF}')
+  nft delete rule inet filter input handle $HANDLE
+
+  HANDLE=$(nft -a list chain inet filter input | grep "InputRuleTcp53" | awk '{print $NF}')
+  nft delete rule inet filter input handle $HANDLE
+
+  HANDLE=$(nft -a list chain inet filter prerouting | grep "RedirRuleUdp53" | awk '{print $NF}')
+  nft delete rule inet filter prerouting handle $HANDLE
+
+  HANDLE=$(nft -a list chain inet filter prerouting | grep "RedirRuleTcp53" | awk '{print $NF}')
+  nft delete rule inet filter prerouting handle $HANDLE
+
+  nft flush chain inet filter MIA 2>/dev/null
+  nft delete chain inet filter MIA 2>/dev/null
+}
