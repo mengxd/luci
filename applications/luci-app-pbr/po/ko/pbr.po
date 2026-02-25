@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-15 16:49+0000\n"
+"PO-Revision-Date: 2026-02-10 18:11+0000\n"
 "Last-Translator: Hyeonjeong Lee <h9101654@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationspbr/ko/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:277
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:398
@@ -70,7 +70,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:43
 msgid "Basic Configuration"
-msgstr ""
+msgstr "기본 설정"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:321
 msgid "Chain"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:474
 msgid "Errors encountered, please check the %sREADME%s"
-msgstr ""
+msgstr "오류가 발생했습니다. %sREADME%s를 확인하세요"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:219
 msgid ""
@@ -241,7 +241,7 @@ msgstr "luci-app-pbr의 UCI 및 파일 접근 권한 부여"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:132
 msgid "IPv6 Support"
-msgstr ""
+msgstr "IPv6 지원"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:157
 msgid "Ignored Interfaces"
@@ -323,7 +323,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:65
 msgid "Mode"
-msgstr ""
+msgstr "모드"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:278
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:358
@@ -523,7 +523,7 @@ msgstr "서비스 제어"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:464
 msgid "Service Errors"
-msgstr ""
+msgstr "서비스 오류"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:206
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:217
@@ -540,7 +540,7 @@ msgstr "서비스 상태"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:324
 msgid "Service Warnings"
-msgstr ""
+msgstr "서비스 경고"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:388
 msgid ""
@@ -671,7 +671,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:471
 msgid "Unknown error"
-msgstr ""
+msgstr "알 수 없는 오류"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:40
 msgid "Unknown message"
@@ -687,7 +687,7 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:331
 msgid "Unknown warning"
-msgstr ""
+msgstr "알 수 없는 경고"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:200
 msgid "Uplink Interface Table FW Mark"
@@ -709,11 +709,11 @@ msgstr ""
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/status/include/72_pbr.js:64
 msgid "Version"
-msgstr ""
+msgstr "버전"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/pbr/status.js:197
 msgid "Version %s"
-msgstr ""
+msgstr "버전 %s"
 
 #: applications/luci-app-pbr/htdocs/luci-static/resources/view/pbr/overview.js:223
 msgid "WAN Table FW Mark"
