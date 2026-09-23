@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-08-01 07:02+0000\n"
+"PO-Revision-Date: 2026-09-10 18:04+0000\n"
 "Last-Translator: 為什麼不加空格 <c++23@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/openwrt/luciapplicationsbanip/zh_Hant/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:869
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:938
@@ -48,23 +48,23 @@ msgstr "-- 集合選擇 --"
 msgid "-- default --"
 msgstr "-- 預設 --"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:239
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:266
 msgid "<IP-Address>"
 msgstr "<IP 位址>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:240
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:267
 msgid "<IP-Address><CSV-Separator>"
-msgstr ""
+msgstr "<IP 位址><CSV 分隔符號>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
 msgid "<IP-Address><Space><Netmask>"
 msgstr "<IP 位址><空間><網路遮罩>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:242
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:269
 msgid "<JSON Lines><IP-Address><JSON Lines>"
 msgstr "<JSON Lines><IP 位址><JSON Lines>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:243
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:270
 msgid "<Suricata Syntax>"
 msgstr "<Suricata 語法>"
 
@@ -95,6 +95,10 @@ msgstr "活動訂閱源"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:867
 msgid "AdGuardHome login error"
 msgstr "AdGuardHome 登入錯誤"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:219
+msgid "Add feed"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:496
 msgid "Additional trigger delay in seconds before banIP processing begins."
@@ -161,9 +165,9 @@ msgstr "自動封鎖清單"
 msgid "Auto Detection"
 msgstr "自動偵測"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:489
 msgid "Auto-added IPs"
-msgstr ""
+msgstr "自動新增的 IP"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1051
 msgid ""
@@ -203,7 +207,7 @@ msgstr "封鎖 VLAN 轉發"
 msgid "Block packets with spoofed source IP addresses in all supported chains."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:474
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
 msgid "Blocked Packets"
 msgstr ""
 
@@ -235,7 +239,7 @@ msgstr "CPU 核心數"
 msgid "Cancel"
 msgstr "取消"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:247
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
 msgid "Chain"
 msgstr "鏈"
 
@@ -255,7 +259,7 @@ msgstr "此分頁上的變更需要重新載入 banIP 服務使其生效。"
 msgid "Changes on this tab needs a banIP service restart to take effect."
 msgstr "此分頁上的變更需要重新啟動 banIP 服務使其生效。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:319
 msgid "Clear"
 msgstr "清除"
 
@@ -269,7 +273,7 @@ msgid ""
 "named nftables Sets. For further information please check the %s."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
 msgid "Count"
 msgstr "計數"
 
@@ -281,9 +285,17 @@ msgstr "國家"
 msgid "Country Selection"
 msgstr "國家選擇"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "Custom Feed"
+msgstr ""
+
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:49
 msgid "Custom Feed Editor"
 msgstr "自訂訂閱源編輯器"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:201
+msgid "Custom feed file saved."
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:592
 msgid ""
@@ -295,7 +307,7 @@ msgstr ""
 msgid "Deduplicate IPs"
 msgstr "刪除重複 IP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
 msgid "Description"
 msgstr "描述"
 
@@ -313,7 +325,7 @@ msgstr "停用"
 msgid "Don't check SSL server certificates during download."
 msgstr "下載時不檢查伺服器的 SSL 憑證。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:299
 msgid "Download"
 msgstr "下載"
 
@@ -336,6 +348,10 @@ msgstr "下載工具"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:704
 msgid "Drop packets silently or actively reject Inbound traffic."
 msgstr "靜靜地丟棄封包或積極地拒絕傳入流量。"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:75
+msgid "Duplicate feed name: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:901
 msgid "E-Mail Notification"
@@ -370,16 +386,17 @@ msgid "Edit Blocklist"
 msgstr "編輯封鎖清單"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:371
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:460
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:463
 msgid "Elements"
 msgstr "元素"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:313
 msgid "Elements (max. 50)"
 msgstr "元素 (最多 50 個)"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:208
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:257
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:228
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:245
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:273
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:883
 msgid "Empty field not allowed"
 msgstr "不允許留空"
@@ -405,7 +422,7 @@ msgstr "啟用遠端紀錄"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:519
 msgid ""
 "Enable a GeoIP Map with suspicious Set elements. This requires external "
-"requests to get the map tiles and geolocation data."
+"requests to load the Leaflet library and to fetch the geolocation data."
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:438
@@ -418,7 +435,7 @@ msgstr "啟用遠端 cgi 介面以接收遠端紀錄事件。"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:441
 msgid "Enable verbose debug logging in case of processing errors."
-msgstr "若遇處理錯誤啟用詳細除錯記錄。"
+msgstr "啟用詳細除錯記錄，以防發生處理錯誤。"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:438
 msgid "Enabled"
@@ -448,7 +465,7 @@ msgstr "外部允許清單訂閱源"
 msgid "External Blocklist Feeds"
 msgstr "外部封鎖清單訂閱源"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:561
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:565
 msgid "Failed to generate a banIP report!"
 msgstr "無法產生 banIP 報告！"
 
@@ -460,7 +477,7 @@ msgstr "訂閱源完成"
 msgid "Feed Flag Reset"
 msgstr "訂閱源旗標重設"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:203
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:224
 msgid "Feed Name"
 msgstr "訂閱源名稱"
 
@@ -468,11 +485,15 @@ msgstr "訂閱源名稱"
 msgid "Feed Selection"
 msgstr "訂閱源選擇"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:235
+msgid "Feed name already used"
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:425
 msgid "Feed/Set Settings"
 msgstr "訂閱源/集合設定"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:303
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
 msgid "Fill"
 msgstr "填充"
 
@@ -480,11 +501,11 @@ msgstr "填充"
 msgid "Firewall Log"
 msgstr "防火牆紀錄"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:262
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:278
 msgid "Flag"
 msgstr "旗標"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
 msgid "Flag not supported"
 msgstr "旗標不受支援"
 
@@ -524,7 +545,7 @@ msgstr "IP"
 msgid "IP Search"
 msgstr "IP 搜尋"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:531
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:535
 msgid "IP Search..."
 msgstr "IP 搜尋..."
 
@@ -544,11 +565,11 @@ msgstr "IPv6 網路介面"
 msgid "IPv6 Support"
 msgstr "IPv6 支援"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:248
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:251
 msgid "Inbound"
 msgstr "傳入"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
 msgid "Inbound & Outbound"
 msgstr "傳入與傳出"
 
@@ -564,7 +585,7 @@ msgstr "傳入封鎖策略"
 msgid "Inbound Feed"
 msgstr "傳入訂閱源"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:307
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
 msgid "Inbound&#160;(packets)"
 msgstr "傳入&#160;(封包)"
 
@@ -576,13 +597,13 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:387
 msgid "Interfaces"
-msgstr ""
+msgstr "介面"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1022
 msgid "Invalid URL format"
 msgstr "無效 URL 格式"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:211
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:231
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:886
 msgid "Invalid characters"
 msgstr "無效字元"
@@ -591,9 +612,13 @@ msgstr "無效字元"
 msgid "Invalid expiry format, e.g. 5m, 2h, 1d or 1h30m"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:125
-msgid "Invalid input values, unable to save modifications."
-msgstr "輸入值無效，無法儲存變更。"
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:43
+msgid "Invalid feed entry: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:40
+msgid "Invalid feed name: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:976
 msgid "LACNIC - serving the Latin American and Caribbean region"
@@ -697,13 +722,25 @@ msgstr "LuCI 登入失敗"
 msgid "Map Reset"
 msgstr "地圖重設"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:521
 msgid "Map..."
 msgstr "地圖..."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:544
 msgid "Max Open Files"
 msgstr "開啟檔案的最大數目"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:49
+msgid "Missing URL: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:46
+msgid "Missing description or rule: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid "Monitor Local Allowlist"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:383
 msgid "NFT Information"
@@ -729,7 +766,7 @@ msgstr "Nice 等級"
 msgid "No %s related logs yet!"
 msgstr "還沒有 %s 相關紀錄！"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:513
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
 msgid "No GeoIP Map data!"
 msgstr "沒有 GeoIP 地圖資料！"
 
@@ -760,7 +797,7 @@ msgstr "進行封鎖前允許同一 IP 的失敗登入嘗試在紀錄中出現�
 msgid "Opt out specific feeds from the deduplication process."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:249
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:252
 msgid "Outbound"
 msgstr "傳出"
 
@@ -768,7 +805,7 @@ msgstr "傳出"
 msgid "Outbound Feed"
 msgstr "傳出訂閱源"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:311
 msgid "Outbound&#160;(packets)"
 msgstr "傳出&#160;(封包)"
 
@@ -813,7 +850,7 @@ msgid ""
 "disable the log monitor at all set it to '0'."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:312
 msgid "Port&#160;/&#160;Protocol"
 msgstr "連接埠&#160;/&#160;協定"
 
@@ -846,7 +883,7 @@ msgid ""
 "required to enable E-Mail functionality."
 msgstr "banIP 通知電子郵件的接收位址，要開啟電子郵件功能必須填寫此資訊。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:568
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:572
 msgid "Refresh"
 msgstr "重新整理"
 
@@ -886,7 +923,7 @@ msgstr "限制來自/對少量安全 IP 的網際網路存取。"
 msgid "Result"
 msgstr "結果"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:238
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:264
 msgid "Rule"
 msgstr "規則"
 
@@ -910,15 +947,15 @@ msgstr ""
 "每秒 SYN 封包數的閾值，用以防止 WAN 遭受 DoS 攻擊。要停用此安全措施，請將其設"
 "定為 '0'。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:321
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:325
 msgid "Save"
 msgstr "儲存"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1098
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1102
 msgid "Save & Reload"
 msgstr "儲存並重新載入"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1105
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1109
 msgid "Save & Restart"
 msgstr "儲存並重新啟動"
 
@@ -959,35 +996,35 @@ msgid "Sender address for banIP notification E-Mails."
 msgstr "banIP 通知郵件的傳送位址。"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:110
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:305
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
 msgid "Set"
-msgstr "設定"
+msgstr "集合"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:106
 msgid "Set Content"
-msgstr "設定內容"
+msgstr "集合內容"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:524
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:528
 msgid "Set Content..."
-msgstr "設定內容..."
+msgstr "集合內容..."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:694
 msgid "Set Load Retries"
-msgstr ""
+msgstr "集合載入重試次數"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:685
 msgid "Set Policy"
-msgstr "設定規則"
+msgstr "集合規則"
 
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:57
 msgid "Set Reporting"
-msgstr "設定報告"
+msgstr "集合報告"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:565
 msgid "Set Split Size"
-msgstr "設定分割尺寸"
+msgstr "集合分割大小"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:496
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:500
 msgid "Set details"
 msgstr "集合詳情"
 
@@ -1005,9 +1042,9 @@ msgstr ""
 msgid "Set the syslog level for NFT logging."
 msgstr "設定 NFT 紀錄記錄的 syslog 等級。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:456
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:459
 msgid "Sets"
-msgstr ""
+msgstr "集合"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:420
 msgid "Settings"
@@ -1023,11 +1060,11 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:994
 msgid "Split ASN Set"
-msgstr "分開 ASN 集合"
+msgstr "分割 ASN 集合"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:982
 msgid "Split Country Set"
-msgstr "分開國家集合"
+msgstr "分割國家集合"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:565
 msgid ""
@@ -1043,7 +1080,7 @@ msgstr "啟動觸發介面"
 msgid "Status"
 msgstr "狀態"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1091
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1095
 msgid "Stop"
 msgstr "停止"
 
@@ -1065,7 +1102,7 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:588
 msgid "Target directory for banIP-related error files."
-msgstr ""
+msgstr "banIP 相關錯誤檔案的目標目錄。"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:584
 msgid "Target directory for banIP-related report files."
@@ -1083,6 +1120,12 @@ msgstr "允許清單過大，無法儲存變更。"
 msgid "The blocklist is too big, unable to save modifications."
 msgstr "封鎖清單過大，無法儲存變更。"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid ""
+"The log monitor only honours the entries of the local allowlist, IPs which "
+"are merely covered by an external allowlist feed can be blocked."
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:994
 msgid "The selected ASNs are stored in separate Sets."
 msgstr "所選的 ASN 被儲存在不同的集合中。"
@@ -1097,6 +1140,10 @@ msgstr "所選的優先順序將用於 banIP 背景處理。"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:42
 msgid "The syslog output, pre-filtered for messages related to: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:88
+msgid "The uploaded file is no valid custom feed file."
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:38
@@ -1115,14 +1162,14 @@ msgid ""
 "notation and MAC/IP-bindings are allowed."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:452
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:455
 msgid ""
 "This report shows the latest NFT Set statistics, press the 'Refresh' button "
 "to get a new one. You can also display the specific content of Sets, search "
 "for suspicious IPs and finally, these IPs can also be displayed on a map."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:464
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:467
 msgid "Timestamp"
 msgstr "時間戳"
 
@@ -1137,7 +1184,7 @@ msgstr ""
 msgid "Token to communicate with the cgi interface."
 msgstr "與 cgi 介面通訊使用的權杖。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "Top Sets"
 msgstr ""
 
@@ -1161,11 +1208,11 @@ msgstr ""
 "每秒 UDP 封包數的閾值，用以防止 WAN 遭受 DoS 攻擊。要停用此安全措施，請將其設"
 "定為 '0'。"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:216
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:256
 msgid "URLv4"
 msgstr "URLv4"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:227
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:260
 msgid "URLv6"
 msgstr "URLv6"
 
@@ -1189,19 +1236,23 @@ msgstr "無法解析預設訂閱源檔案！"
 msgid "Unable to parse the ruleset file!"
 msgstr "無法解析規則集檔案！"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:182
+msgid "Unable to read the maintainers feed file."
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:63
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:63
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:197
 msgid "Unable to save modifications: %s"
-msgstr "無法儲存變更: %s"
+msgstr "無法儲存修改: %s"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:294
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:305
 msgid "Upload"
 msgstr "上傳"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:85
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:91
-msgid "Upload of the custom feed file failed."
-msgstr "上傳自訂訂閱源檔案失敗。"
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:151
+msgid "Upload of the custom feed file failed: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:441
 msgid "Verbose Debug Logging"
@@ -1211,7 +1262,7 @@ msgstr "詳細除錯紀錄"
 msgid "Version"
 msgstr "版本"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:187
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:210
 msgid ""
 "With this editor you can upload your local custom feed file or fill up an "
 "initial one (a 1:1 copy of the version shipped with the package). The file "
@@ -1220,7 +1271,7 @@ msgid ""
 "maintainers version just clear the custom feed file."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
 msgid "Worst Sets"
 msgstr ""
 
@@ -1228,11 +1279,12 @@ msgstr ""
 msgid "alert"
 msgstr "警示"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:487
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:491
 msgid "allowlist"
-msgstr ""
+msgstr "允許清單"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:865
+#, fuzzy
 msgid "asterisk invalid account"
 msgstr "星號無效帳號"
 
@@ -1240,13 +1292,13 @@ msgstr "星號無效帳號"
 msgid "banIP"
 msgstr "banIP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
 msgid "bcp38"
-msgstr ""
+msgstr "bcp38"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:488
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:492
 msgid "blocklist"
-msgstr ""
+msgstr "封鎖清單"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:789
 msgid "crit"
@@ -1264,9 +1316,16 @@ msgstr "丟棄"
 msgid "dropbear failed login"
 msgstr "dropbear 登入失敗"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "elements"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "elements / packets"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
+msgid "elements per packet"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:787
@@ -1277,7 +1336,7 @@ msgstr "緊急"
 msgid "err"
 msgstr "錯誤"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:482
 msgid "icmp-flood"
 msgstr ""
 
@@ -1285,11 +1344,11 @@ msgstr ""
 msgid "info"
 msgstr "資訊"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:479
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:483
 msgid "invalid ct"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:484
 msgid "invalid tcp"
 msgstr ""
 
@@ -1313,7 +1372,11 @@ msgstr "本地封鎖清單"
 msgid "memory"
 msgstr "記憶體"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "new"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "no hits yet"
 msgstr ""
 
@@ -1329,8 +1392,12 @@ msgstr "線上文件"
 msgid "openvpn TLS error"
 msgstr "openvpn TLS 錯誤"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:424
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:423
 msgid "packet counters disabled"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "packets"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:687
@@ -1349,21 +1416,21 @@ msgstr "sshd 已關閉連線"
 msgid "sshd failed login"
 msgstr "sshd 登入失敗"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:476
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
 msgid "syn-flood"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:477
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
 msgid "udp-flood"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:393
 msgid "uplink IPv4"
-msgstr ""
+msgstr "上行連結 IPv4"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:394
 msgid "uplink IPv6"
-msgstr ""
+msgstr "上行連結 IPv6"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:391
 msgid "vlan-allow"

@@ -48,23 +48,23 @@ msgstr "-- Cài đặt lựa chọn --"
 msgid "-- default --"
 msgstr "--Mặc định--"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:239
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:266
 msgid "<IP-Address>"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:240
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:267
 msgid "<IP-Address><CSV-Separator>"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
 msgid "<IP-Address><Space><Netmask>"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:242
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:269
 msgid "<JSON Lines><IP-Address><JSON Lines>"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:243
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:270
 msgid "<Suricata Syntax>"
 msgstr ""
 
@@ -94,6 +94,10 @@ msgstr "Nguồn cấp đang hoạt động"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:867
 msgid "AdGuardHome login error"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:219
+msgid "Add feed"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:496
@@ -160,7 +164,7 @@ msgstr "Blocklist tự động"
 msgid "Auto Detection"
 msgstr "Phát hiện tự động"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:489
 msgid "Auto-added IPs"
 msgstr ""
 
@@ -208,7 +212,7 @@ msgstr ""
 msgid "Block packets with spoofed source IP addresses in all supported chains."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:474
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
 msgid "Blocked Packets"
 msgstr ""
 
@@ -240,7 +244,7 @@ msgstr "Số lõi CPU"
 msgid "Cancel"
 msgstr "huỷ"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:247
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
 msgid "Chain"
 msgstr ""
 
@@ -261,7 +265,7 @@ msgid "Changes on this tab needs a banIP service restart to take effect."
 msgstr ""
 "Các thay đổi trên tab này cần khởi động lại dịch vụ banIP để có hiệu lực."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:319
 msgid "Clear"
 msgstr "Xóa"
 
@@ -275,7 +279,7 @@ msgid ""
 "named nftables Sets. For further information please check the %s."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
 msgid "Count"
 msgstr "Đếm"
 
@@ -287,9 +291,17 @@ msgstr "Quốc gia"
 msgid "Country Selection"
 msgstr ""
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "Custom Feed"
+msgstr ""
+
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:49
 msgid "Custom Feed Editor"
 msgstr "Trình chỉnh sửa nguồn cấp tùy chỉnh"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:201
+msgid "Custom feed file saved."
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:592
 msgid ""
@@ -303,7 +315,7 @@ msgstr ""
 msgid "Deduplicate IPs"
 msgstr "Loại bỏ trùng lặp IP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
 msgid "Description"
 msgstr "Mô tả"
 
@@ -323,7 +335,7 @@ msgstr "Vô hiệu hóa"
 msgid "Don't check SSL server certificates during download."
 msgstr "Không kiểm tra chứng chỉ máy chủ SSL trong khi tải xuống."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:299
 msgid "Download"
 msgstr "Tải xuống"
 
@@ -345,6 +357,10 @@ msgstr "Tiện ích tải xuống"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:704
 msgid "Drop packets silently or actively reject Inbound traffic."
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:75
+msgid "Duplicate feed name: %s"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:901
@@ -380,16 +396,17 @@ msgid "Edit Blocklist"
 msgstr "Chỉnh sửa danh sách chặn"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:371
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:460
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:463
 msgid "Elements"
 msgstr "Các phần tử"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:313
 msgid "Elements (max. 50)"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:208
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:257
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:228
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:245
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:273
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:883
 msgid "Empty field not allowed"
 msgstr "Không được để trống chỗ này"
@@ -415,7 +432,7 @@ msgstr ""
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:519
 msgid ""
 "Enable a GeoIP Map with suspicious Set elements. This requires external "
-"requests to get the map tiles and geolocation data."
+"requests to load the Leaflet library and to fetch the geolocation data."
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:438
@@ -458,7 +475,7 @@ msgstr ""
 msgid "External Blocklist Feeds"
 msgstr "Nguồn cấp danh sách chặn bên ngoài"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:561
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:565
 msgid "Failed to generate a banIP report!"
 msgstr ""
 
@@ -470,7 +487,7 @@ msgstr ""
 msgid "Feed Flag Reset"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:203
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:224
 msgid "Feed Name"
 msgstr "Tên nguồn cấp"
 
@@ -478,11 +495,15 @@ msgstr "Tên nguồn cấp"
 msgid "Feed Selection"
 msgstr "Chọn nguồn cấp"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:235
+msgid "Feed name already used"
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:425
 msgid "Feed/Set Settings"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:303
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
 msgid "Fill"
 msgstr "Điền"
 
@@ -490,11 +511,11 @@ msgstr "Điền"
 msgid "Firewall Log"
 msgstr "Nhật ký tường lửa"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:262
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:278
 msgid "Flag"
 msgstr "Cờ"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
 msgid "Flag not supported"
 msgstr "Không hỗ trợ cờ"
 
@@ -532,7 +553,7 @@ msgstr "IP"
 msgid "IP Search"
 msgstr "Tìm kiếm IP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:531
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:535
 msgid "IP Search..."
 msgstr "Tìm kiếm IP..."
 
@@ -552,11 +573,11 @@ msgstr ""
 msgid "IPv6 Support"
 msgstr "Hỗ trợ IPv6"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:248
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:251
 msgid "Inbound"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
 msgid "Inbound & Outbound"
 msgstr ""
 
@@ -572,7 +593,7 @@ msgstr ""
 msgid "Inbound Feed"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:307
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
 msgid "Inbound&#160;(packets)"
 msgstr ""
 
@@ -592,7 +613,7 @@ msgstr ""
 msgid "Invalid URL format"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:211
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:231
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:886
 msgid "Invalid characters"
 msgstr "Ký tự không hợp lệ"
@@ -601,9 +622,13 @@ msgstr "Ký tự không hợp lệ"
 msgid "Invalid expiry format, e.g. 5m, 2h, 1d or 1h30m"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:125
-msgid "Invalid input values, unable to save modifications."
-msgstr "Giá trị đầu vào không hợp lệ, không thể lưu thay đổi."
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:43
+msgid "Invalid feed entry: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:40
+msgid "Invalid feed name: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:976
 msgid "LACNIC - serving the Latin American and Caribbean region"
@@ -707,13 +732,25 @@ msgstr ""
 msgid "Map Reset"
 msgstr "Đặt lại ánh xạ"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:521
 msgid "Map..."
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:544
 msgid "Max Open Files"
 msgstr "Số tệp Mở Tối đa"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:49
+msgid "Missing URL: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:46
+msgid "Missing description or rule: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid "Monitor Local Allowlist"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:383
 msgid "NFT Information"
@@ -739,7 +776,7 @@ msgstr "Mức độ ưu tiên (Nice)"
 msgid "No %s related logs yet!"
 msgstr "Chưa có nhật ký liên quan đến %s nào!"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:513
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
 msgid "No GeoIP Map data!"
 msgstr "Không có dữ liệu bản đồ GeoIP!"
 
@@ -772,7 +809,7 @@ msgstr ""
 msgid "Opt out specific feeds from the deduplication process."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:249
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:252
 msgid "Outbound"
 msgstr ""
 
@@ -780,7 +817,7 @@ msgstr ""
 msgid "Outbound Feed"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:311
 msgid "Outbound&#160;(packets)"
 msgstr ""
 
@@ -830,7 +867,7 @@ msgstr ""
 "Chỉ phân tích một số lượng cuối cùng của các mục log để xác định sự kiện "
 "đáng ngờ. Để vô hiệu hóa giám sát log hoàn toàn, đặt giá trị là '0'."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:312
 msgid "Port&#160;/&#160;Protocol"
 msgstr ""
 
@@ -865,7 +902,7 @@ msgstr ""
 "Địa chỉ người nhận cho thư thông báo banIP, thông tin này là bắt buộc để "
 "kích hoạt chức năng E-Mail."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:568
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:572
 msgid "Refresh"
 msgstr "Làm mới"
 
@@ -905,7 +942,7 @@ msgstr "Hạn chế truy cập internet từ/đến một số IP an toàn nhỏ
 msgid "Result"
 msgstr "Kết quả"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:238
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:264
 msgid "Rule"
 msgstr "Quy tắc"
 
@@ -927,15 +964,15 @@ msgid ""
 "this safeguard set it to '0'."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:321
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:325
 msgid "Save"
 msgstr "Lưu"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1098
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1102
 msgid "Save & Reload"
 msgstr "Lưu & Tải lại"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1105
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1109
 msgid "Save & Restart"
 msgstr "Lưu & Khởi động lại"
 
@@ -976,7 +1013,7 @@ msgid "Sender address for banIP notification E-Mails."
 msgstr "Địa chỉ người gửi cho thư thông báo banIP."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:110
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:305
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
 msgid "Set"
 msgstr "Đặt"
 
@@ -984,7 +1021,7 @@ msgstr "Đặt"
 msgid "Set Content"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:524
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:528
 msgid "Set Content..."
 msgstr ""
 
@@ -1004,7 +1041,7 @@ msgstr "Đặt báo cáo"
 msgid "Set Split Size"
 msgstr "Đặt kích thước phân chia"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:496
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:500
 msgid "Set details"
 msgstr "Chi tiết đặt"
 
@@ -1022,7 +1059,7 @@ msgstr ""
 msgid "Set the syslog level for NFT logging."
 msgstr "Đặt mức syslog cho việc ghi log NFT."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:456
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:459
 msgid "Sets"
 msgstr ""
 
@@ -1060,7 +1097,7 @@ msgstr "Giao diện kích hoạt khởi động"
 msgid "Status"
 msgstr "Trạng thái"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1091
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1095
 msgid "Stop"
 msgstr "Dừng"
 
@@ -1100,6 +1137,12 @@ msgstr "Danh sách cho phép quá lớn, không thể lưu các sửa đổi."
 msgid "The blocklist is too big, unable to save modifications."
 msgstr "Danh sách chặn quá lớn, không thể lưu các sửa đổi."
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid ""
+"The log monitor only honours the entries of the local allowlist, IPs which "
+"are merely covered by an external allowlist feed can be blocked."
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:994
 msgid "The selected ASNs are stored in separate Sets."
 msgstr ""
@@ -1115,6 +1158,10 @@ msgstr "Ưu tiên được chọn sẽ được sử dụng cho xử lý nền b
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:42
 msgid "The syslog output, pre-filtered for messages related to: %s"
 msgstr "Đầu ra syslog, được lọc trước cho các thông báo liên quan đến: %s"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:88
+msgid "The uploaded file is no valid custom feed file."
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:38
 msgid ""
@@ -1138,14 +1185,14 @@ msgstr ""
 "thể.<br /> <em><b>Vui lòng lưu ý:</b></em> chỉ thêm chính xác một địa chỉ "
 "MAC/IPv4/IPv6 hoặc tên miền trên mỗi dòng."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:452
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:455
 msgid ""
 "This report shows the latest NFT Set statistics, press the 'Refresh' button "
 "to get a new one. You can also display the specific content of Sets, search "
 "for suspicious IPs and finally, these IPs can also be displayed on a map."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:464
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:467
 msgid "Timestamp"
 msgstr "Dấu thời gian"
 
@@ -1159,7 +1206,7 @@ msgstr ""
 msgid "Token to communicate with the cgi interface."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "Top Sets"
 msgstr ""
 
@@ -1181,11 +1228,11 @@ msgid ""
 "this safeguard set it to '0'."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:216
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:256
 msgid "URLv4"
 msgstr "URLv4"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:227
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:260
 msgid "URLv6"
 msgstr "URLv6"
 
@@ -1209,19 +1256,23 @@ msgstr "Không thể phân tích tệp nguồn cấp mặc định!"
 msgid "Unable to parse the ruleset file!"
 msgstr ""
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:182
+msgid "Unable to read the maintainers feed file."
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:63
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:63
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:197
 msgid "Unable to save modifications: %s"
 msgstr "Không thể lưu các sửa đổi: %s"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:294
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:305
 msgid "Upload"
 msgstr "Tải lên"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:85
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:91
-msgid "Upload of the custom feed file failed."
-msgstr "Tải lên tệp nguồn cấp tùy chỉnh thất bại."
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:151
+msgid "Upload of the custom feed file failed: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:441
 msgid "Verbose Debug Logging"
@@ -1231,7 +1282,7 @@ msgstr "Ghi nhật ký gỡ lỗi chi tiết (Verbose Debug Logging)"
 msgid "Version"
 msgstr "Phiên bản"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:187
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:210
 msgid ""
 "With this editor you can upload your local custom feed file or fill up an "
 "initial one (a 1:1 copy of the version shipped with the package). The file "
@@ -1240,7 +1291,7 @@ msgid ""
 "maintainers version just clear the custom feed file."
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
 msgid "Worst Sets"
 msgstr ""
 
@@ -1248,7 +1299,7 @@ msgstr ""
 msgid "alert"
 msgstr "cảnh báo"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:487
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:491
 msgid "allowlist"
 msgstr ""
 
@@ -1260,11 +1311,11 @@ msgstr ""
 msgid "banIP"
 msgstr "banIP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
 msgid "bcp38"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:488
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:492
 msgid "blocklist"
 msgstr ""
 
@@ -1284,9 +1335,16 @@ msgstr ""
 msgid "dropbear failed login"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "elements"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "elements / packets"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
+msgid "elements per packet"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:787
@@ -1297,7 +1355,7 @@ msgstr "emerg"
 msgid "err"
 msgstr "err"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:482
 msgid "icmp-flood"
 msgstr ""
 
@@ -1305,11 +1363,11 @@ msgstr ""
 msgid "info"
 msgstr "info"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:479
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:483
 msgid "invalid ct"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:484
 msgid "invalid tcp"
 msgstr ""
 
@@ -1333,7 +1391,11 @@ msgstr "danh sách chặn cục bộ"
 msgid "memory"
 msgstr "bộ nhớ"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "new"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "no hits yet"
 msgstr ""
 
@@ -1349,8 +1411,12 @@ msgstr "tài liệu trực tuyến"
 msgid "openvpn TLS error"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:424
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:423
 msgid "packet counters disabled"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "packets"
 msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:687
@@ -1369,11 +1435,11 @@ msgstr ""
 msgid "sshd failed login"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:476
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
 msgid "syn-flood"
 msgstr ""
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:477
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
 msgid "udp-flood"
 msgstr ""
 

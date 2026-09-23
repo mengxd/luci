@@ -105,12 +105,15 @@ function feedChips(feeds) {
 
 /*
 	system_info is "cores: n, log: cmd, fetch: cmd, model, target, release".
-	Keep the named entries and the board model, drop target and release.
+	Keep the named entries and the board model, drop target and release. The
+	model is the only unnamed entry, it gets the 'system' key for display.
 */
 function sysPairs(text) {
 	let plain = 0;
 	return parsePairs(text).filter(function (pair) {
 		return pair[0] || ++plain === 1;
+	}).map(function (pair) {
+		return pair[0] ? pair : ['system', pair[1]];
 	});
 }
 
@@ -184,7 +187,7 @@ return view.extend({
 
 		let m, s, o;
 		m = new form.Map('banip', 'banIP', _('Configuration of the banIP package to ban incoming and outgoing IPs via named nftables Sets. \
-			For further information please check the %s.'.format(`<a style="color:#37c;font-weight:bold;" href="https://github.com/openwrt/packages/blob/master/net/banip/files/README.md" target="_blank" rel="noreferrer noopener" >${_('online documentation')}</a>`)));
+			For further information please check the %s.'.format(`<a style="color:#37c;font-weight:bold;" href="https://github.com/openwrt/packages/blob/master/net/banip/README.md" target="_blank" rel="noreferrer noopener" >${_('online documentation')}</a>`)));
 
 		/*
 			set text content helper function
@@ -273,6 +276,7 @@ return view.extend({
 						setText('last', pickValue(runPairs, 'date / time'));
 						setText('last_sub', [pickValue(runPairs, 'mode'), pickValue(runPairs, 'duration'),
 						pickValue(runPairs, 'memory')].filter(v => v && v !== '-').join(', '));
+						setText('trigger', join(info.trigger_interfaces));
 						setText('wan_dev', join(info.wan_devices));
 						setText('wan_if', join(info.wan_interfaces));
 						setText('vlan_allow', join(info.vlan_allow));
@@ -386,12 +390,13 @@ return view.extend({
 					E('div', { 'class': 'ban-card' }, [
 						E('div', { 'class': 'ban-title' }, [_('Interfaces')]),
 						E('div', { 'class': 'ban-stack' }, [].concat(
-							kvRow(_('wan-dev'), 'wan_dev'),
-							kvRow(_('wan-if'), 'wan_if'),
-							kvRow(_('vlan-allow'), 'vlan_allow'),
-							kvRow(_('vlan-block'), 'vlan_block'),
-							kvRow(_('uplink IPv4'), 'uplink4'),
-							kvRow(_('uplink IPv6'), 'uplink6')
+							kvRow('trigger', 'trigger'),
+							kvRow('wan-dev', 'wan_dev'),
+							kvRow('wan-if', 'wan_if'),
+							kvRow('vlan-allow', 'vlan_allow'),
+							kvRow('vlan-block', 'vlan_block'),
+							kvRow('uplink IPv4', 'uplink4'),
+							kvRow('uplink IPv6', 'uplink6')
 						))
 					]),
 					E('div', { 'class': 'ban-card' }, [
@@ -516,7 +521,7 @@ return view.extend({
 		o = s.taboption('general', form.Flag, 'ban_nftcount', _('Reporting Counters'), _('Enable NFT counters for Set elements and chain rules. Required for the GeoIP Map and packet statistics in the Set Reporting.'));
 		o.rmempty = true;
 
-		o = s.taboption('general', form.Flag, 'ban_map', _('Enable GeoIP Map'), _('Enable a GeoIP Map with suspicious Set elements. This requires external requests to get the map tiles and geolocation data.'));
+		o = s.taboption('general', form.Flag, 'ban_map', _('Enable GeoIP Map'), _('Enable a GeoIP Map with suspicious Set elements. This requires external requests to load the Leaflet library and to fetch the geolocation data.'));
 		o.depends('ban_nftcount', '1');
 		o.optional = true;
 		o.rmempty = true;
@@ -722,7 +727,7 @@ return view.extend({
 				ui.addNotification(null, E('p', _('Unable to parse the custom feed file!')), 'error');
 			}
 		}
-		if (!feeds && result[1] && result[1].trim() !== "") {
+		if ((!L.isObject(feeds) || !Object.keys(feeds).length) && result[1] && result[1].trim() !== "") {
 			try {
 				feeds = JSON.parse(result[1]);
 			} catch (e) {
@@ -1062,7 +1067,7 @@ return view.extend({
 		o.value('2h');
 		o.value('1d');
 		o.value('7d');
-		o.value('2w');
+		o.value('14d');
 		o.placeholder = _('-- default --');
 		o.optional = true;
 		o.rmempty = true;
@@ -1070,7 +1075,7 @@ return view.extend({
 			if (!value) {
 				return true;
 			}
-			if (!value.match(/^([1-9][0-9]*(ms|s|m|h|d|w))+$/)) {
+			if (!value.match(/^([1-9][0-9]*(ms|s|m|h|d))+$/)) {
 				return _('Invalid expiry format, e.g. 5m, 2h, 1d or 1h30m');
 			}
 			return true;

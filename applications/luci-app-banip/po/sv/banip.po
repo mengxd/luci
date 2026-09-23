@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-08-13 09:16+0000\n"
-"Last-Translator: Jonatan Nyberg <nickwick@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-09-09 16:39+0000\n"
+"Last-Translator: Daniel Nylander <yeagersthlm@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsbanip/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:869
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:938
@@ -48,23 +48,23 @@ msgstr "-- Val av uppsättning --"
 msgid "-- default --"
 msgstr "-- standard --"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:239
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:266
 msgid "<IP-Address>"
 msgstr "<IP-adress>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:240
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:267
 msgid "<IP-Address><CSV-Separator>"
 msgstr "<IP-adress><CSV-avgränsare>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
 msgid "<IP-Address><Space><Netmask>"
 msgstr "<IP-adress><Blanksteg><Nätmask>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:242
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:269
 msgid "<JSON Lines><IP-Address><JSON Lines>"
 msgstr "<JSON Lines><IP-adress><JSON Lines>"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:243
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:270
 msgid "<Suricata Syntax>"
 msgstr "<Suricata-syntax>"
 
@@ -95,6 +95,10 @@ msgstr "Aktiva flöden"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:867
 msgid "AdGuardHome login error"
 msgstr "Inloggningsfel i AdGuard Home"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:219
+msgid "Add feed"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:496
 msgid "Additional trigger delay in seconds before banIP processing begins."
@@ -166,9 +170,9 @@ msgstr "Automatisk blockeringslista"
 msgid "Auto Detection"
 msgstr "Automatisk detektering"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:489
 msgid "Auto-added IPs"
-msgstr ""
+msgstr "Automatiskt tillagda IP-adresser"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1051
 msgid ""
@@ -215,9 +219,9 @@ msgid "Block packets with spoofed source IP addresses in all supported chains."
 msgstr ""
 "Blockera paket med förfalskade käll-IP-adresser i alla kedjor som stöds."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:474
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
 msgid "Blocked Packets"
-msgstr ""
+msgstr "Blockerade paket"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:931
 msgid "Blocklist Feed"
@@ -249,7 +253,7 @@ msgstr "CPU-kärnor"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:247
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
 msgid "Chain"
 msgstr "Kedja"
 
@@ -273,7 +277,7 @@ msgstr ""
 "Ändringar på den här fliken kräver att banIP-tjänsten startas om för att "
 "börja gälla."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:319
 msgid "Clear"
 msgstr "Rensa"
 
@@ -289,7 +293,7 @@ msgstr ""
 "Konfiguration av banIP-paketet för att blockera inkommande och utgående IP-"
 "adresser via namngivna nftables-uppsättningar. Mer information finns i %s."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:306
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
 msgid "Count"
 msgstr "Antal"
 
@@ -301,9 +305,17 @@ msgstr "Länder"
 msgid "Country Selection"
 msgstr "Val av länder"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "Custom Feed"
+msgstr ""
+
 #: applications/luci-app-banip/root/usr/share/luci/menu.d/luci-app-banip.json:49
 msgid "Custom Feed Editor"
 msgstr "Redigerare för anpassade flöden"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:201
+msgid "Custom feed file saved."
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:592
 msgid ""
@@ -317,7 +329,7 @@ msgstr ""
 msgid "Deduplicate IPs"
 msgstr "Ta bort IP-dubbletter"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:241
 msgid "Description"
 msgstr "Beskrivning"
 
@@ -337,7 +349,7 @@ msgstr "Inaktivera"
 msgid "Don't check SSL server certificates during download."
 msgstr "Kontrollera inte serverns SSL-certifikat under hämtning."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:299
 msgid "Download"
 msgstr "Hämta"
 
@@ -360,6 +372,10 @@ msgstr "Hämtningsverktyg"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:704
 msgid "Drop packets silently or actively reject Inbound traffic."
 msgstr "Släpp paket utan svar eller avvisa inkommande trafik aktivt."
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:75
+msgid "Duplicate feed name: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:901
 msgid "E-Mail Notification"
@@ -394,16 +410,17 @@ msgid "Edit Blocklist"
 msgstr "Redigera blockeringslista"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:371
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:460
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:463
 msgid "Elements"
 msgstr "Element"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:313
 msgid "Elements (max. 50)"
 msgstr "Element (högst 50)"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:208
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:257
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:228
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:245
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:273
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:883
 msgid "Empty field not allowed"
 msgstr "Tomt fält är inte tillåtet"
@@ -431,10 +448,8 @@ msgstr "Aktivera fjärrloggning"
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:519
 msgid ""
 "Enable a GeoIP Map with suspicious Set elements. This requires external "
-"requests to get the map tiles and geolocation data."
+"requests to load the Leaflet library and to fetch the geolocation data."
 msgstr ""
-"Aktivera en GeoIP-karta med misstänkta uppsättningselement. Detta kräver "
-"externa förfrågningar för att hämta kartplattor och geolokaliseringsdata."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:438
 msgid "Enable the banIP service."
@@ -478,7 +493,7 @@ msgstr "Externa tillåtelselisteflöden"
 msgid "External Blocklist Feeds"
 msgstr "Externa blockeringslisteflöden"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:561
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:565
 msgid "Failed to generate a banIP report!"
 msgstr "Det gick inte att generera en banIP-rapport!"
 
@@ -490,7 +505,7 @@ msgstr "Flöde slutfört"
 msgid "Feed Flag Reset"
 msgstr "Återställ flödesflaggor"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:203
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:224
 msgid "Feed Name"
 msgstr "Flödesnamn"
 
@@ -498,11 +513,15 @@ msgstr "Flödesnamn"
 msgid "Feed Selection"
 msgstr "Val av flöden"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:235
+msgid "Feed name already used"
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:425
 msgid "Feed/Set Settings"
 msgstr "Inställningar för flöden/uppsättningar"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:303
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:312
 msgid "Fill"
 msgstr "Fyll i"
 
@@ -510,11 +529,11 @@ msgstr "Fyll i"
 msgid "Firewall Log"
 msgstr "Brandväggslogg"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:262
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:278
 msgid "Flag"
 msgstr "Flagga"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:268
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:285
 msgid "Flag not supported"
 msgstr "Flaggan stöds inte"
 
@@ -554,7 +573,7 @@ msgstr "IP"
 msgid "IP Search"
 msgstr "IP-sökning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:531
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:535
 msgid "IP Search..."
 msgstr "Sök IP-adress…"
 
@@ -574,11 +593,11 @@ msgstr "IPv6-nätverksgränssnitt"
 msgid "IPv6 Support"
 msgstr "IPv6-stöd"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:248
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:251
 msgid "Inbound"
 msgstr "Inkommande"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:250
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:253
 msgid "Inbound & Outbound"
 msgstr "Inkommande och utgående"
 
@@ -594,7 +613,7 @@ msgstr "Blockeringspolicy för inkommande trafik"
 msgid "Inbound Feed"
 msgstr "Flöde för inkommande trafik"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:307
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:310
 msgid "Inbound&#160;(packets)"
 msgstr "Inkommande&#160;(paket)"
 
@@ -608,13 +627,13 @@ msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:387
 msgid "Interfaces"
-msgstr ""
+msgstr "Gränssnitt"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1022
 msgid "Invalid URL format"
 msgstr "Ogiltigt URL-format"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:211
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:231
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:886
 msgid "Invalid characters"
 msgstr "Ogiltiga tecken"
@@ -623,9 +642,13 @@ msgstr "Ogiltiga tecken"
 msgid "Invalid expiry format, e.g. 5m, 2h, 1d or 1h30m"
 msgstr "Ogiltigt format för giltighetstid, t.ex. 5m, 2h, 1d eller 1h30m"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:125
-msgid "Invalid input values, unable to save modifications."
-msgstr "Ogiltiga inmatningsvärden. Det gick inte att spara ändringarna."
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:43
+msgid "Invalid feed entry: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:40
+msgid "Invalid feed name: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:976
 msgid "LACNIC - serving the Latin American and Caribbean region"
@@ -734,13 +757,25 @@ msgstr "Misslyckad LuCI-inloggning"
 msgid "Map Reset"
 msgstr "Återställ karta"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:521
 msgid "Map..."
 msgstr "Karta..."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:544
 msgid "Max Open Files"
 msgstr "Högsta antal öppna filer"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:49
+msgid "Missing URL: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:46
+msgid "Missing description or rule: %s"
+msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid "Monitor Local Allowlist"
+msgstr "Övervaka lokal tillåtelselista"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:383
 msgid "NFT Information"
@@ -766,7 +801,7 @@ msgstr "Nice-nivå"
 msgid "No %s related logs yet!"
 msgstr "Inga loggar relaterade till %s ännu!"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:513
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:517
 msgid "No GeoIP Map data!"
 msgstr "Inga GeoIP-kartdata!"
 
@@ -799,7 +834,7 @@ msgstr ""
 msgid "Opt out specific feeds from the deduplication process."
 msgstr "Undanta vissa flöden från borttagningen av dubbletter."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:249
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:252
 msgid "Outbound"
 msgstr "Utgående"
 
@@ -807,7 +842,7 @@ msgstr "Utgående"
 msgid "Outbound Feed"
 msgstr "Flöde för utgående trafik"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:311
 msgid "Outbound&#160;(packets)"
 msgstr "Utgående&#160;(paket)"
 
@@ -865,7 +900,7 @@ msgstr ""
 "Tolka endast det angivna antalet senaste loggposter för misstänkta "
 "händelser. Ange ”0” för att inaktivera loggövervakningen helt."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:309
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:312
 msgid "Port&#160;/&#160;Protocol"
 msgstr "Port&#160;/&#160;Protokoll"
 
@@ -904,7 +939,7 @@ msgstr ""
 "Mottagaradress för e-postaviseringar från banIP. Uppgiften krävs för att "
 "aktivera e-postfunktionen."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:568
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:572
 msgid "Refresh"
 msgstr "Uppdatera"
 
@@ -948,7 +983,7 @@ msgstr ""
 msgid "Result"
 msgstr "Resultat"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:238
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:264
 msgid "Rule"
 msgstr "Regel"
 
@@ -972,15 +1007,15 @@ msgstr ""
 "SYN-tröskel i paket per sekund för att förhindra WAN-DoS-attacker. Ange ”0” "
 "för att inaktivera skyddet."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:321
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:325
 msgid "Save"
 msgstr "Spara"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1098
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1102
 msgid "Save & Reload"
 msgstr "Spara och läs om"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1105
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1109
 msgid "Save & Restart"
 msgstr "Spara och starta om"
 
@@ -1021,7 +1056,7 @@ msgid "Sender address for banIP notification E-Mails."
 msgstr "Avsändaradress för e-postaviseringar från banIP."
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:110
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:305
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:308
 msgid "Set"
 msgstr "Uppsättning"
 
@@ -1029,7 +1064,7 @@ msgstr "Uppsättning"
 msgid "Set Content"
 msgstr "Innehåll i uppsättning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:524
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:528
 msgid "Set Content..."
 msgstr "Innehåll i uppsättning…"
 
@@ -1049,7 +1084,7 @@ msgstr "Rapportering för uppsättningar"
 msgid "Set Split Size"
 msgstr "Delningsstorlek för uppsättning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:496
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:500
 msgid "Set details"
 msgstr "Detaljer för uppsättning"
 
@@ -1069,9 +1104,9 @@ msgstr "Ange NFT-policyn för banIP-relaterade uppsättningar."
 msgid "Set the syslog level for NFT logging."
 msgstr "Ange syslog-nivån för NFT-loggning."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:456
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:459
 msgid "Sets"
-msgstr ""
+msgstr "Mängder"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:420
 msgid "Settings"
@@ -1109,7 +1144,7 @@ msgstr "Gränssnitt som utlöser start"
 msgid "Status"
 msgstr "Status"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1091
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1095
 msgid "Stop"
 msgstr "Stoppa"
 
@@ -1149,6 +1184,14 @@ msgstr "Tillåtelselistan är för stor. Det gick inte att spara ändringarna."
 msgid "The blocklist is too big, unable to save modifications."
 msgstr "Blockeringslistan är för stor. Det gick inte att spara ändringarna."
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:1082
+msgid ""
+"The log monitor only honours the entries of the local allowlist, IPs which "
+"are merely covered by an external allowlist feed can be blocked."
+msgstr ""
+"Loggövervakningen följer endast posterna i den lokala tillåtelselistan; IP-"
+"adresser som enbart omfattas av en extern tillåtelselista kan blockeras."
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:994
 msgid "The selected ASNs are stored in separate Sets."
 msgstr "De valda ASN-numren lagras i separata uppsättningar."
@@ -1164,6 +1207,10 @@ msgstr "Den valda prioriteten används för banIP:s bakgrundsbearbetning."
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/logtemplate.js:42
 msgid "The syslog output, pre-filtered for messages related to: %s"
 msgstr "Syslog-utdata, förfiltrerad för meddelanden relaterade till: %s"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:88
+msgid "The uploaded file is no valid custom feed file."
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:38
 msgid ""
@@ -1189,7 +1236,7 @@ msgstr ""
 "endast till exakt en MAC-/IPv4-/IPv6-adress eller ett domännamn per rad. "
 "Intervall i CIDR-notation och MAC/IP-bindningar är tillåtna."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:452
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:455
 msgid ""
 "This report shows the latest NFT Set statistics, press the 'Refresh' button "
 "to get a new one. You can also display the specific content of Sets, search "
@@ -1200,7 +1247,7 @@ msgstr ""
 "innehållet i enskilda uppsättningar, söka efter misstänkta IP-adresser och "
 "visa dem på en karta."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:464
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:467
 msgid "Timestamp"
 msgstr "Tidsstämpel"
 
@@ -1216,9 +1263,9 @@ msgstr ""
 msgid "Token to communicate with the cgi interface."
 msgstr "Token för kommunikation med CGI-gränssnittet."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "Top Sets"
-msgstr ""
+msgstr "Största mängderna"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:912
 msgid "Topic for banIP notification E-Mails."
@@ -1240,11 +1287,11 @@ msgstr ""
 "UDP-tröskel i paket per sekund för att förhindra WAN-DoS-attacker. Ange ”0” "
 "för att inaktivera skyddet."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:216
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:256
 msgid "URLv4"
 msgstr "URLv4"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:227
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:260
 msgid "URLv6"
 msgstr "URLv6"
 
@@ -1268,19 +1315,23 @@ msgstr "Det gick inte att tolka standardflödesfilen!"
 msgid "Unable to parse the ruleset file!"
 msgstr "Det gick inte att tolka regeluppsättningsfilen!"
 
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:182
+msgid "Unable to read the maintainers feed file."
+msgstr ""
+
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/allowlist.js:63
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/blocklist.js:63
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:197
 msgid "Unable to save modifications: %s"
 msgstr "Det gick inte att spara ändringarna: %s"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:294
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:305
 msgid "Upload"
 msgstr "Ladda upp"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:85
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:91
-msgid "Upload of the custom feed file failed."
-msgstr "Uppladdningen av den anpassade flödesfilen misslyckades."
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:151
+msgid "Upload of the custom feed file failed: %s"
+msgstr ""
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:441
 msgid "Verbose Debug Logging"
@@ -1290,7 +1341,7 @@ msgstr "Utförlig felsökningsloggning"
 msgid "Version"
 msgstr "Version"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:187
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:210
 msgid ""
 "With this editor you can upload your local custom feed file or fill up an "
 "initial one (a 1:1 copy of the version shipped with the package). The file "
@@ -1304,17 +1355,17 @@ msgstr ""
 "ta bort poster, lägga till nya eller skapa en lokal säkerhetskopia. Töm den "
 "anpassade flödesfilen för att återgå till underhållarnas version."
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
 msgid "Worst Sets"
-msgstr ""
+msgstr "Sämsta mängderna"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:788
 msgid "alert"
 msgstr "varning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:487
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:491
 msgid "allowlist"
-msgstr ""
+msgstr "tillåtelselista"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:865
 msgid "asterisk invalid account"
@@ -1324,13 +1375,13 @@ msgstr "ogiltigt Asterisk-konto"
 msgid "banIP"
 msgstr "banIP"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:485
 msgid "bcp38"
-msgstr ""
+msgstr "bcp38"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:488
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:492
 msgid "blocklist"
-msgstr ""
+msgstr "blockeringslista"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:789
 msgid "crit"
@@ -1348,10 +1399,17 @@ msgstr "släpp"
 msgid "dropbear failed login"
 msgstr "misslyckad Dropbear-inloggning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:470
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "elements"
+msgstr "element"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
 msgid "elements / packets"
-msgstr ""
+msgstr "element/paket"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:473
+msgid "elements per packet"
+msgstr "element per paket"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:787
 msgid "emerg"
@@ -1361,21 +1419,21 @@ msgstr "nödläge"
 msgid "err"
 msgstr "fel"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:478
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:482
 msgid "icmp-flood"
-msgstr ""
+msgstr "ICMP-flod"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:793
 msgid "info"
 msgstr "info"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:479
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:483
 msgid "invalid ct"
-msgstr ""
+msgstr "ogiltig ct"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:484
 msgid "invalid tcp"
-msgstr ""
+msgstr "ogiltig TCP"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:738
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:746
@@ -1397,9 +1455,13 @@ msgstr "lokal blockeringslista"
 msgid "memory"
 msgstr "minne"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:469
-msgid "no hits yet"
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/feeds.js:221
+msgid "new"
 msgstr ""
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:472
+msgid "no hits yet"
+msgstr "inga träffar ännu"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:792
 msgid "notice"
@@ -1413,9 +1475,13 @@ msgstr "onlinedokumentation"
 msgid "openvpn TLS error"
 msgstr "OpenVPN TLS-fel"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:424
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:423
 msgid "packet counters disabled"
-msgstr ""
+msgstr "paketräknare inaktiverade"
+
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:425
+msgid "packets"
+msgstr "paket"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:687
 msgid "performance"
@@ -1433,37 +1499,37 @@ msgstr "sshd stängde anslutningen"
 msgid "sshd failed login"
 msgstr "misslyckad sshd-inloggning"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:476
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:480
 msgid "syn-flood"
-msgstr ""
+msgstr "SYN-flod"
 
-#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:477
+#: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/setreport.js:481
 msgid "udp-flood"
-msgstr ""
+msgstr "UDP-flod"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:393
 msgid "uplink IPv4"
-msgstr ""
+msgstr "uppströms-IPv4"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:394
 msgid "uplink IPv6"
-msgstr ""
+msgstr "uppströms-IPv6"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:391
 msgid "vlan-allow"
-msgstr ""
+msgstr "vlan-allow"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:392
 msgid "vlan-block"
-msgstr ""
+msgstr "vlan-block"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:389
 msgid "wan-dev"
-msgstr ""
+msgstr "wan-dev"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:390
 msgid "wan-if"
-msgstr ""
+msgstr "wan-if"
 
 #: applications/luci-app-banip/htdocs/luci-static/resources/view/banip/overview.js:791
 msgid "warn"
